@@ -1,5 +1,6 @@
 
 <?php
+//This script opens the schedule and user files, parsing their data into User and TimeSlot objects
 	date_default_timezone_set("America/New_York");
 	$schedule;
 	$people;
@@ -24,7 +25,7 @@
 	flock($fd,LOCK_UN);
 	fclose($fd);
 	
-	
+	//user class
 	class User
 	{
 		private $times=array();
@@ -58,6 +59,7 @@
 	
 		
 	}
+	//time slot class
 	class TimeSlot
 	{
 		protected $day;

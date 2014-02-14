@@ -1,4 +1,5 @@
 <?php
+//This script edits the user file, adding new entries or editing old ones. This is where the cookies are set.
 	if(isset($_GET["count"]))
 	{
 		setcookie($_GET["count"],$_GET["count"],0,'/~cnc34/','cs1520.cs.pitt.edu');
